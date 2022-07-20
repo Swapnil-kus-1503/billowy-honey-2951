@@ -1,0 +1,35 @@
+.container{
+    width:100%;
+    /* border: 1px solid red; */
+    /* justify-content: center; */
+    margin: auto;
+    background-color: #e3ebee;
+}
+.story{
+    padding-top: 3rem;
+    font-size: 45px;
+    padding-left: 3rem;
+    margin-top: 3rem;
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.para{
+    margin-top: 1.3rem;
+    font-size: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.list{
+    margin-top: 1rem;
+    font-size: 20px;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+
+}
