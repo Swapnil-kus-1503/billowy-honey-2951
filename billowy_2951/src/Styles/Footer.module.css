@@ -1,0 +1,43 @@
+.container{
+    color:  #a7aabb;
+    width: 100%;
+    background-color: #212432;
+    border: 1px solid red;
+    height: auto;
+    padding-bottom: 3rem;
+}
+.imgBackground{
+    background: url("https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo-dark.svg");
+    background-image: url("https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo-dark.svg");
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    display: block;
+    margin-left:7rem;
+    margin-top:2rem;
+}
+
+.text{
+    margin-left: 20rem;
+    margin-top:2rem;
+    padding-bottom: 1rem;
+}
+.textContent{
+    color:#e3ebee;
+    font-size:1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footerh1{
+    cursor: pointer;
+}
+.footerh1:hover{
+    text-decoration: underline;
+    text-decoration-color: #e3ebee;
+}
