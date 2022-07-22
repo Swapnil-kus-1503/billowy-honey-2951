@@ -60,7 +60,7 @@ const Home = () => {
           </p>
         </Box>
         <Box>
-          <Button
+          <Link to="/store"><Button
             className={styles.joinNow}
             size="lg"
             background={"#212432"}
@@ -71,6 +71,7 @@ const Home = () => {
           >
             Buy A Pass
           </Button>
+          </Link>
         </Box>
         <Box>
           <Image
