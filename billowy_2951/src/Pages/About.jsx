@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Components/Footer";
 import styles from "../Styles/About.module.css";
 
 const about = () => {
@@ -35,6 +36,7 @@ const about = () => {
             </li>
           </ul>
         </div>
+        <Footer/>
       </div>
   );
 };

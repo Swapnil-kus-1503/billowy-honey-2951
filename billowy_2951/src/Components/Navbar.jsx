@@ -3,6 +3,7 @@ import { Box, Flex, IconButton, Image, Text } from "@chakra-ui/react";
 import { Link} from "react-router-dom";
 import Footer from "./Footer";
 import { SearchIcon, TriangleDownIcon } from "@chakra-ui/icons";
+import Home from "../Pages/Home";
 
 
 const Navbar = () => {
@@ -85,9 +86,8 @@ const Navbar = () => {
           
         </Flex>
       </Flex>
-
       {/* <------ Footer ------> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
