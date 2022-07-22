@@ -4,6 +4,7 @@ import About from './About';
 import Community from './Community';
 import HealthyLiving from './HealthyLiving';
 import Home from './Home';
+import Login from './Login';
 import Membership from './Membership';
 import Programs from './Programs';
 import Store from './Store';
@@ -13,6 +14,7 @@ const AllRoutes = () => {
     <div>
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/login" element={<Login/>}/>
             <Route path="/community" element={<Community/>}/>
             <Route path="/healthyliving" element={<HealthyLiving/>}/>
             <Route path="/about" element={<About/>}/>
