@@ -12,7 +12,7 @@ const Navbar = () => {
       <Flex
         style={{
           gap: "2rem",
-          padding: "1.5rem",
+          padding: "1rem",
           marginLeft: "2rem",
           fontWeight: "bolder",
         }}
