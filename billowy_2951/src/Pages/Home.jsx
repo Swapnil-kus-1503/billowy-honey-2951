@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <div>
-        Home
+      <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.webp" alt="" />
+      <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
