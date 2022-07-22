@@ -1,0 +1,45 @@
+.container{
+    background: #f0f4f6;
+}
+.top{
+    width:90%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.divContainer{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    margin:auto;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 0.8rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+}
+.passContainer{
+    width: 100%;
+    background:#FFFFFF ;
+    /* border: 1px solid teal; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.image{
+    width: 100%;
+}
+.text{
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.addTobag{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}

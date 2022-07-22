@@ -1,5 +1,6 @@
 import { Box, Button, Container, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 import styles from "../Styles/Home.module.css";
 
@@ -21,14 +22,16 @@ const Home = () => {
               approach to feeling great.
             </h2>
             <Box>
-              <Button
-                className={styles.joinNow}
-                size="lg"
-                background={"#212432"}
-                textTransform="uppercase"
-              >
-                Join Now
-              </Button>
+              <Link to="/login">
+                <Button
+                  className={styles.joinNow}
+                  size="lg"
+                  background={"#212432"}
+                  textTransform="uppercase"
+                >
+                  Join Now
+                </Button>
+              </Link>
             </Box>
           </Box>
           <Box className={styles.box2}>
