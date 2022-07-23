@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "../Components/PrivateRoute";
 import About from "./About";
+import Cart from "./Cart";
 import Community from "./Community";
 import HealthyLiving from "./HealthyLiving";
 import Home from "./Home";
@@ -30,6 +31,14 @@ const AllRoutes = () => {
         />
         <Route path="/programs" element={<Programs />} />
         <Route path="/membership" element={<Membership />} />
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </div>
   );
