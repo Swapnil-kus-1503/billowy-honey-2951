@@ -29,6 +29,9 @@
     cursor: pointer;
     border-radius: 5px;
 }
+.passContainer:hover{
+    border: 4px solid #4296cb;
+}
 .image{
     width: 100%;
 }

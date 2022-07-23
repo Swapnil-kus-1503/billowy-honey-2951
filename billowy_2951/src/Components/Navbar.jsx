@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, IconButton, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import { SearchIcon, TriangleDownIcon } from "@chakra-ui/icons";
+import { SearchIcon, TriangleDownIcon, ViewIcon } from "@chakra-ui/icons";
 import Home from "../Pages/Home";
 import styles from "../Styles/Navbar.module.css";
 
@@ -92,8 +92,21 @@ const Navbar = () => {
               </Box>
             </Link>
             <Box>
-              <IconButton aria-label="Search database" icon={<SearchIcon />} />
+              <IconButton
+                width={"20px"}
+                aria-label="Search database"
+                icon={<SearchIcon />}
+              />
             </Box>
+            <Link to="/cart">
+              <Box>
+                <IconButton
+                  width={"20px"}
+                  aria-label="View database"
+                  icon={<ViewIcon />}
+                />
+              </Box>
+            </Link>
           </Flex>
         </Flex>
       </Flex>
