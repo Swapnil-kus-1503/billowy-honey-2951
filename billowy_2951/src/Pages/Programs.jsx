@@ -10,20 +10,27 @@ const Programs = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [page, setPage] = useState(Number(searchParams.get("page")) || 1);
   const [programs, setPrograms] = useState([]);
+  const [loading,setLoading]=useState(false);
+  const [error,setError]=useState(false);
 
   const handleClick = () => {
     alert("Added To Cart");
   };
 
   useEffect(() => {
+    setError(false);
+    setLoading(true);
     axios({
       url: `http://localhost:8080/programs?_page=${page}&_limit=8`,
     })
       .then((res) => {
+        setLoading(false)
         console.log(res.data);
         setPrograms(res.data);
       })
       .catch((err) => {
+        setLoading(false);
+        setError(true);
         console.log(err);
       });
   }, [page]);
@@ -39,6 +46,9 @@ const Programs = () => {
       <Box fontSize='45px' paddingBottom={"1rem"} paddingLeft={'5rem'}>
         <h1>Workout Programs</h1>
       </Box>
+      <div>
+        <Button>High to Low</Button>
+      </div>
       <div>
         <div className={styles.divContainer}>
           {programs.map((list) => (

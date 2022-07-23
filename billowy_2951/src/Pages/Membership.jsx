@@ -10,19 +10,27 @@ const Membership = () => {
   const [data, setData] = useState([]);
   const [gift, setGift] = useState([]);
 
+  const [loading,setLoading]=useState(false);
+  const [error,setError]=useState(false);
+
   const handleClick =()=>{
     alert('Added To Cart');
   }
 
   useEffect(() => {
+    setLoading(true);
+    setError(false);
     axios({
       url: "http://localhost:8080/passes",
     })
       .then((res) => {
+        setLoading(false);
         console.log(res.data);
         setData(res.data);
       })
       .catch((err) => {
+        setLoading(false);
+        setError(true);
         console.log(err);
       });
   }, []);

@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PrivateRoute from "../Components/PrivateRoute";
+import Checkout from "../Payments/Checkout";
+import Payment from "../Payments/Payment";
 import About from "./About";
 import Cart from "./Cart";
 import Community from "./Community";
@@ -36,6 +38,22 @@ const AllRoutes = () => {
           element={
             <PrivateRoute>
               <Cart />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <PrivateRoute>
+              <Checkout />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/payment"
+          element={
+            <PrivateRoute>
+              <Payment />
             </PrivateRoute>
           }
         />
