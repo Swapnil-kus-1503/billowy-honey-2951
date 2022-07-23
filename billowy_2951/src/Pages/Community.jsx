@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../Components/Footer'
 
 const Community = () => {
   return (
-    <div>Community</div>
+    <div>
+      <Footer/>
+    </div>
   )
 }
 
