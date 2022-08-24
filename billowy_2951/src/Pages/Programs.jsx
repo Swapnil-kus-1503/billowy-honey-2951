@@ -46,9 +46,9 @@ const Programs = () => {
       <Box fontSize='45px' paddingBottom={"1rem"} paddingLeft={'5rem'}>
         <h1>Workout Programs</h1>
       </Box>
-      <div>
+      {/* <div>
         <Button>High to Low</Button>
-      </div>
+      </div> */}
       <div>
         <div className={styles.divContainer}>
           {programs.map((list) => (
